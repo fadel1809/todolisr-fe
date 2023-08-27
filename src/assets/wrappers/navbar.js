@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.nav`
   .logo {
-    width: 100px;
+    width: 120px;
   }
 `;
 

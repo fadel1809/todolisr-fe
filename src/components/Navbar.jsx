@@ -3,7 +3,7 @@ import Wrapper from "../assets/wrappers/navbar";
 const Navbar = () => {
   return (
     <Wrapper>
-      <nav className="bg-white py-4 shadow-md">
+      <nav className="bg-white py-1 shadow-lg">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             <div className="font-semibold text-xl">
@@ -11,24 +11,9 @@ const Navbar = () => {
             </div>
             <ul className="flex space-x-4">
               <li>
-                <a href="#" className="text-gray-600 hover:text-gray-800">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-800">
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-800">
-                  Templates
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-800">
-                  Sign In
-                </a>
+                <button className="bg-merah-logo hover:bg-hover-tema text-white py-1 px-6 rounded-full">
+                  Sign in
+                </button>
               </li>
             </ul>
           </div>
