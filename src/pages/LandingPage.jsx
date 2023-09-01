@@ -3,6 +3,7 @@ import { Navbar } from "../components";
 import gambar from "../assets/images/landing-page.svg";
 import { Wrapper } from "../assets/wrappers/landingPage";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const LandingPage = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -41,9 +42,12 @@ const LandingPage = () => {
             <p className="text-lg mb-8">
               Get things done efficiently and stay organized.
             </p>
-            <button className="bg-merah-logo hover:bg-hover-tema text-white py-2 px-6 rounded-full">
+            <Link
+              className="bg-merah-logo hover:bg-hover-tema text-white py-2 px-6 rounded-full"
+              to="/register"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
           <div className="image-container px-20 ">
             <img src={gambar} alt="main" className="image max-w-full h-auto" />

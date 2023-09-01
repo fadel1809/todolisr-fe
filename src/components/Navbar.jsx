@@ -1,5 +1,6 @@
 import Logo from "./Logo";
 import Wrapper from "../assets/wrappers/navbar";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Wrapper>
@@ -11,9 +12,12 @@ const Navbar = () => {
             </div>
             <ul className="flex space-x-4">
               <li>
-                <button className="bg-merah-logo hover:bg-hover-tema text-white py-1 px-6 rounded-full">
-                  Sign in
-                </button>
+                <Link
+                  className="bg-merah-logo hover:bg-hover-tema text-white py-2 px-6 rounded-full"
+                  to="/login"
+                >
+                  Sign In
+                </Link>
               </li>
             </ul>
           </div>
